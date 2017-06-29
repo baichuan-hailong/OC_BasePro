@@ -9,5 +9,10 @@
 #ifndef GloDefine_h
 #define GloDefine_h
 
+#define SC_WIDTH  ([UIScreen mainScreen].bounds.size.width)
+#define SC_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+#define SC_BOUNDS ([UIScreen mainScreen].bounds)
+
+#define BaseURL   @"www.baidu.com"
 
 #endif /* GloDefine_h */

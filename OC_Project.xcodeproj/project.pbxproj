@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		E51D740827E53BBC0E7A8845 /* libPods-OC_Project.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D80CD18A4A48642579B57B75 /* libPods-OC_Project.a */; };
 		E60E9FA81F03C35B00FA9811 /* UILabel+hl.m in Sources */ = {isa = PBXBuildFile; fileRef = E60E9FA71F03C35B00FA9811 /* UILabel+hl.m */; };
+		E65CBEC61F04A63D00BE17F6 /* UIImage+changeSize.m in Sources */ = {isa = PBXBuildFile; fileRef = E65CBEC51F04A63D00BE17F6 /* UIImage+changeSize.m */; };
+		E65CBECB1F04A7B100BE17F6 /* AFNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E65CBECA1F04A7B100BE17F6 /* AFNetManager.m */; };
 		E68879611F03B72D00EF9318 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E68879601F03B72D00EF9318 /* main.m */; };
 		E68879641F03B72D00EF9318 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E68879631F03B72D00EF9318 /* AppDelegate.m */; };
 		E68879671F03B72D00EF9318 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E68879661F03B72D00EF9318 /* ViewController.m */; };
@@ -42,6 +44,10 @@
 		D80CD18A4A48642579B57B75 /* libPods-OC_Project.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OC_Project.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E60E9FA61F03C35B00FA9811 /* UILabel+hl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+hl.h"; sourceTree = "<group>"; };
 		E60E9FA71F03C35B00FA9811 /* UILabel+hl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+hl.m"; sourceTree = "<group>"; };
+		E65CBEC41F04A63D00BE17F6 /* UIImage+changeSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+changeSize.h"; sourceTree = "<group>"; };
+		E65CBEC51F04A63D00BE17F6 /* UIImage+changeSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+changeSize.m"; sourceTree = "<group>"; };
+		E65CBEC91F04A7B100BE17F6 /* AFNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetManager.h; sourceTree = "<group>"; };
+		E65CBECA1F04A7B100BE17F6 /* AFNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetManager.m; sourceTree = "<group>"; };
 		E688795C1F03B72D00EF9318 /* OC_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OC_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E68879601F03B72D00EF9318 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E68879621F03B72D00EF9318 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -101,8 +107,27 @@
 			children = (
 				E60E9FA61F03C35B00FA9811 /* UILabel+hl.h */,
 				E60E9FA71F03C35B00FA9811 /* UILabel+hl.m */,
+				E65CBEC41F04A63D00BE17F6 /* UIImage+changeSize.h */,
+				E65CBEC51F04A63D00BE17F6 /* UIImage+changeSize.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		E65CBEC71F04A70300BE17F6 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				E65CBEC81F04A78900BE17F6 /* AFNeWorking */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		E65CBEC81F04A78900BE17F6 /* AFNeWorking */ = {
+			isa = PBXGroup;
+			children = (
+				E65CBEC91F04A7B100BE17F6 /* AFNetManager.h */,
+				E65CBECA1F04A7B100BE17F6 /* AFNetManager.m */,
+			);
+			path = AFNeWorking;
 			sourceTree = "<group>";
 		};
 		E68879531F03B72D00EF9318 = {
@@ -136,6 +161,7 @@
 				E68879661F03B72D00EF9318 /* ViewController.m */,
 				E68879951F03BADC00EF9318 /* Config */,
 				E60E9FA51F03C34000FA9811 /* Category */,
+				E65CBEC71F04A70300BE17F6 /* Tools */,
 				E688796E1F03B72D00EF9318 /* Assets.xcassets */,
 				E68879701F03B72D00EF9318 /* LaunchScreen.storyboard */,
 				E68879731F03B72D00EF9318 /* Info.plist */,
@@ -377,9 +403,11 @@
 			files = (
 				E68879671F03B72D00EF9318 /* ViewController.m in Sources */,
 				E60E9FA81F03C35B00FA9811 /* UILabel+hl.m in Sources */,
+				E65CBEC61F04A63D00BE17F6 /* UIImage+changeSize.m in Sources */,
 				E68879641F03B72D00EF9318 /* AppDelegate.m in Sources */,
 				E68879611F03B72D00EF9318 /* main.m in Sources */,
 				E688796D1F03B72D00EF9318 /* OC_Project.xcdatamodeld in Sources */,
+				E65CBECB1F04A7B100BE17F6 /* AFNetManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
